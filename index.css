@@ -622,5 +622,141 @@
 }
 
 
+/* ========================================= */
+/* Адаптивний дизайн: Мобільні пристрої (< 768px)         */
+/* ========================================= */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
 
-    </style>
+    .header .logo {
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .center-nav {
+        margin-top: 0;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .center-nav a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .cart-button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .games-grid,
+    .features-grid,
+    .free-games-grid,
+    .play-instantly-grid,
+    .action-open-world-grid,
+    .looter-shooters-grid,
+    .rpg-adventure-grid,
+    .shooters-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .feature-card {
+        padding: 15px;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+
+    .game-info .details h3 {
+        font-size: 0.9rem;
+    }
+
+    .game-info .details p {
+        font-size: 0.75rem;
+    }
+
+    .add-button {
+        font-size: 1.2rem;
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo-left,
+    .footer-logo-right {
+        display: none;
+    }
+
+    .footer-text {
+        margin: 0;
+    }
+}
+
+/* ========================================= */
+/* Адаптивний дизайн: Дуже маленькі екрани (< 576px)      */
+/* ========================================= */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .games-grid,
+    .features-grid,
+    .free-games-grid,
+    .play-instantly-grid,
+    .action-open-world-grid,
+    .looter-shooters-grid,
+    .rpg-adventure-grid,
+    .shooters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .free-games-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .free-games-header .timer-icon {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .footer-text p {
+        font-size: 0.8rem;
+    }
+    
+    .wishlist-popup {
+        width: 95%;
+        padding: 20px;
+    }
+}
+   
